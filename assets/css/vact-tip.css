@@ -1,0 +1,130 @@
+/* Root wrapper */
+.vact-tip {
+	margin: 0;
+	display: grid;
+	gap: 1rem;
+}
+
+/* Inner wrapper */
+.vact-tip__inner {
+	margin: 0;
+	min-height: 320px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Title: previously inline font-weight */
+.vact-tip__title {
+	font-weight: 700!important;
+	font-size: 1.1rem!important;
+}
+.vact-tip__tip{
+	font-size: 1rem!important;
+}
+
+
+/* Meta row: previously inline flex layout */
+.vact-tip__meta {
+	display: grid;
+	grid-template-columns:repeat(3,minmax(0,1fr));
+	align-items: center;
+	gap: 0.75em;
+	margin-block-start: auto;
+	& a{
+		max-inline-size:fit-content;
+		margin-inline:auto;
+	}
+}
+
+/* Category label */
+.vact-tip__category,.vact-tip__moretips {
+	font-size: .9rem;
+	font-weight: 500;
+}
+
+/* Learn more link: previously inline button-like styles */
+.vact-tip__link {
+	display: inline-block;
+	padding: 0.5em 0.75em;
+	background-color: #c4dcf8;
+    color: #000 !important;
+	text-decoration: none;
+	border-radius: 4px;
+	font-size: .9rem;
+	font-weight: 500;
+}
+
+.vact-tip__link:hover,
+.vact-tip__link:focus {
+    text-decoration: none;
+    background-color: #345aa1;
+    color: #fff !important;
+
+}
+
+/* Optional: editor placeholder text */
+.vact-tip__placeholder {
+	font-style: italic;
+	color: #555;
+}
+
+/* Slider wrapper (dashboard widget) */
+.vact-tip-slider {
+	margin: 0;
+}
+
+/* Track of tips */
+.vact-tip-slider__track {
+	position: relative;
+}
+
+/* Individual slide items */
+.vact-tip-slider__item {
+	display: none;
+}
+
+.vact-tip-slider__item.vact-tip--active {
+	display: block;
+}
+
+/* Slider controls */
+
+.vact-tip-slider__controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block-start: 1.5rem;
+    font-size:.9rem;
+    border-block-start: 1px solid lightslategray;
+    padding-block-start: 1rem;
+}
+
+/* Prev/Next buttons */
+.vact-tip-slider__prev,
+.vact-tip-slider__next {
+	border: 1px solid #c3c4c7;
+	background: #f6f7f7;
+	border-radius: 2px;
+	padding: 0.25em 0.5em;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 1;
+}
+
+.vact-tip-slider__prev:hover,
+.vact-tip-slider__next:hover {
+	background: #e2e4e7;
+}
+
+.vact-tip-slider__prev:disabled,
+.vact-tip-slider__next:disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+/* Status text (Tip X of Y) */
+.vact-tip-slider__status {
+	flex: 1;
+	text-align: center;
+}

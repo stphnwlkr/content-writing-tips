@@ -1,0 +1,25 @@
+{
+	"apiVersion": 3,
+	"name": "vact/content-writing-tips",
+	"title": "Content Writing Tips",
+	"category": "widgets",
+	"description": "Displays one or more centrally managed content writing tips.",
+	"icon": "lightbulb",
+	"textdomain": "vact-content-writing-tips",
+	"editorScript": "vact-tip-of-day-block",
+	"style": "vact-content-writing-tips",
+	"script": "vact-tip-slider",
+	"attributes": {
+		"displayMode": {
+			"type": "string",
+			"default": "single"
+		},
+		"tipCount": {
+			"type": "number",
+			"default": 5
+		}
+	},
+	"supports": {
+		"html": false
+	}
+}
