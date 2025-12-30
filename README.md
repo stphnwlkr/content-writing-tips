@@ -138,10 +138,8 @@ Settings → Content Writing Tips
 The settings page also includes:
 
 - Usage instructions for the dashboard widget, shortcode, and block  
-- Link to additional guidance:  
-  https://digital.va.gov/wpnavigator/content-tips/  
-- Email link to suggest new tips:  
-  vawordpressadmin@va.gov  
+- Link to additional guidance 
+- Email link to suggest new tips
 
 ---
 
